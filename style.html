@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aventura na Floresta</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:linear-gradient(#87CEEB,#98FB98);
+    overflow:hidden;
+}
+
+h1{
+    text-align:center;
+    color:white;
+    text-shadow:2px 2px 5px black;
+}
+
+.cenario{
+    position:relative;
+    width:100%;
+    height:100vh;
+}
+
+.sol{
+    width:100px;
+    height:100px;
+    background:gold;
+    border-radius:50%;
+    position:absolute;
+    top:30px;
+    right:50px;
+    box-shadow:0 0 50px yellow;
+}
+
+.castelo{
+    position:absolute;
+    left:70%;
+    bottom:220px;
+    font-size:120px;
+}
+
+.caverna{
+    position:absolute;
+    left:8%;
+    bottom:170px;
+    font-size:110px;
+}
+
+.arvore{
+    position:absolute;
+    bottom:180px;
+    font-size:80px;
+}
+
+.a1{left:20%;}
+.a2{left:35%;}
+.a3{left:50%;}
+.a4{left:60%;}
+
+.rio{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:150px;
+    background:#1E90FF;
+}
+
+.personagem{
+    position:absolute;
+    left:45%;
+    bottom:170px;
+    font-size:70px;
+    animation:andar 6s infinite alternate;
+}
+
+@keyframes andar{
+    from{left:10%;}
+    to{left:80%;}
+}
+
+.botao{
+    position:absolute;
+    top:100px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+button{
+    padding:15px 35px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    background:orange;
+    cursor:pointer;
+}
+
+button:hover{
+    background:gold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="cenario">
+
+<h1>🏕️ A Grande Aventura</h1>
+
+<div class="sol"></div>
+
+<div class="castelo">🏰</div>
+
+<div class="caverna">🕳️</div>
+
+<div class="arvore a1">🌳</div>
+<div class="arvore a2">🌲</div>
+<div class="arvore a3">🌳</div>
+<div class="arvore a4">🌲</div>
+
+<div class="personagem">🧙‍♂️</div>
+
+<div class="rio"></div>
+
+<div class="botao">
+<button onclick="iniciar()">⚔️ Começar Aventura</button>
+</div>
+
+</div>
+
+<script>
+function iniciar(){
+    alert("Você encontrou um mapa mágico! Agora siga para o castelo e descubra o tesouro escondido! 🏆");
+}
+</script>
+
+</body>
+</html>
